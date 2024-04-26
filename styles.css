@@ -9,9 +9,27 @@
       font-size: 80%;
     }
   
-    .project-img{
+    .project-img {
       height: 30%;
       width: 50%;
+    }
+
+    #navbar {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      width: 25%;
+      height: 500px;
+      background-color: green;
+    }
+
+    .nav-list {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      
     }
   }
   
@@ -23,7 +41,6 @@
   #navbar {
     display: flex;
     justify-content:  flex-end;
-    flex-wrap: none;
     position: fixed;
     width: 100%;
     height: 15vh;
@@ -126,7 +143,6 @@
   
   .project-title {
     font-size: 1.2rem;
-
     justify-content: center;
     align-items: center;
     background-color: gray;
@@ -138,6 +154,62 @@
     border-radius: 3px;
     color: white;
   }
+  /* EXPERIENCE SECTION */
+.experience-section {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: gray;
+}
+
+.experience-section-title {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.experience-paragraph {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0.5rem;
+  width: 100%;  
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
+
+.img-container {
+  grid-column: 1;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: small;
+  font-style: italic;
+  padding: ;
+}
+
+
+.experience-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
   /* #CONTACT SECTION */
   .contact-section {
     height: 100vh;
