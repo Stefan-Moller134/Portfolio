@@ -3,38 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  @media (max-width: 22em) {
-    html {
-      font-size: 80%;
-    }
-  
-    .project-img {
-      height: 30%;
-      width: 50%;
-    }
-
-    #navbar {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      position: fixed;
-      width: 25%;
-      height: 500px;
-      background-color: green;
-    }
-
-    .nav-list {
-      margin-top: 100px;
-      display: flex;
-      flex-direction: column;
-      
-    }
-  }
-  
+    
   body {
     font-family: Poppins, sans-serif;
+    min-width: 300px;
   }
   
   /* #NAVBAR  */
@@ -43,7 +15,6 @@
     justify-content:  flex-end;
     position: fixed;
     width: 100%;
-    height: 15vh;
     border-bottom: 0.5px solid white;
     background-color: black;
   }
@@ -67,8 +38,47 @@
   li {
     list-style: none;
   }
+
+  /* #NAVBAR MEDIA */
+  @media (max-width: 520px) {
+    html {
+      font-size: 80%;
+    }
   
-  
+    .project-img {
+      height: 30%;
+      width: 50%;
+    }
+
+    #navbar {
+
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+      margin: 1.67rem;
+    }
+
+    .nav-link {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 300px) {
+    #navbar {
+      display: block;
+      position: static;
+    }
+
+    .nav-list {
+      padding: 1.67rem;
+      margin: 0;
+    }
+  }
+
   /* #WELCOME-SECTION */
   #welcome-section {
     display: flex;
@@ -116,7 +126,7 @@
     display: grid;
     grid-template-columns: 
       repeat(auto-fit, 
-      minmax(320px, 1fr));
+      minmax(260px, 1fr));
     grid-gap: 4.5rem 2rem;
     width: 100%;
     max-width: 1280px;
@@ -199,7 +209,6 @@
 figcaption {
   font-size: small;
   font-style: italic;
-  padding: ;
 }
 
 
