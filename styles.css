@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
     
   body {
     font-family: Poppins, sans-serif;
@@ -92,6 +96,7 @@
   }
   
   .my-name {
+    transform-origin: right;
     font-size: 3.2rem;
     padding: 0.5rem;
   }
@@ -100,6 +105,12 @@
     font-size: 1.1rem;
     font-style: italic;
   }
+
+  #coffee:hover {
+    transform: rotate(180deg);
+    transition: all 1.5s ease-in-out;
+    cursor: grab;
+  }
   
   .job, .code {
     color: gray;
@@ -107,6 +118,7 @@
   
   .job:hover {
     color: blue;
+    cursor: grab;
   }
   /* #PROJECTS SECTION */
   .projects-section {
@@ -136,7 +148,7 @@
   
   .project {
     background-color: gray;
-    border-radius: 3px;
+    border-radius: rem;
   }
   
   a {
@@ -149,6 +161,13 @@
     width: 100%;
     object-fit: cover;
     border-radius: 4px;
+  }
+
+  .project-tile:hover {
+    box-shadow: 10px 10px 15px black;
+    transform: scale(1.05);
+    transition: all 0.25s ease-in-out
+    
   }
   
   .project-title {
@@ -163,6 +182,12 @@
     background-color: black;
     border-radius: 3px;
     color: white;
+  }
+
+  .btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(2);
+    transition: 0.25s ease;
   }
   /* EXPERIENCE SECTION */
 .experience-section {
